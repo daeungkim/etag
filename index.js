@@ -100,6 +100,7 @@ function etag(entity, options) {
     options && typeof options.weak === "boolean" ? options.weak : isStats;
   /**
    * options값이 존재하고 options.weak 프로퍼티의 타입이 boolean인경우 options.weak에 설정되어 있는 값을 weak값으로 설정한다.
+   * 그 이외의 경우 entity 데이터 타입의 Stats개체 여부에 따라 결정된다.
    */
 
   // validate argument
